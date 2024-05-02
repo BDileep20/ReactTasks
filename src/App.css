@@ -1,8 +1,15 @@
-.App-table,td,tr{
+/* .App-table,td,tr,th{
   border: 2px solid black;
+} */
+
+/* styles.css */
+.custom-table {
+  border: 1px solid black;
+  border-collapse: collapse; /* Optional: To collapse borders between cells */
 }
 
-.App-logo {
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +42,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
