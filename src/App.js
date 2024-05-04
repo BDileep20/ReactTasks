@@ -10,7 +10,7 @@
 // import ButtonComponent from "./component/button/button"
 // import GreetingComponent from "./component/greeting/greeting"
 // import CardComponent from "./component/list/Card/cardtask"
-import Counter from "./component/class/Counter/counter"
+import Counter from "./component/class/counter/counter"
 
 // import Button from './component';
 // import Listitems from './component/list/listitems';
