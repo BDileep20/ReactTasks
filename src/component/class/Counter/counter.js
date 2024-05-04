@@ -99,7 +99,7 @@ class Counter extends Component{
     render(){
         return(
         <>
-        <div>
+        <div style={{flexDirection:"row",flex:1,display:"flex",flexWrap:"wrap",alignItems:'end'}} >
          {this.state.products.map((each)=>{
           const {image,title,Count,id}=each
             return(
@@ -117,7 +117,7 @@ class Counter extends Component{
          </p>
          </div> */}
          {/* <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', justifyContent: 'center' }}> */}
-         <div style={{ border: '1px solid white', borderRadius: '9px', padding: '20px', width: '300px',margin:'10px',boxShadow:'1px 1px 20px 1px',}}>
+         <div style={{border: '1px solid white', borderRadius: '9px', padding: '20px', width: '280px',margin:'10px',boxShadow:'1px 1px 20px 1px',}}>
         <img src={image} height={200} width={200} alt="Product Image" />
         <h4>Title: {title}</h4>
         <div  style={{ display:'flex',alignItems:'end',margin:'10px' } }>
