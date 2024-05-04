@@ -11,40 +11,46 @@ class Counter extends Component{
     },
     {
         id:2,
-        title:"Laptop",
-        image:"https://imgeng.jagran.com/images/2023/mar/best%20laptops1679305053832.jpg",
+        title:"MotoRola-edge",
+        image:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/q/2/edge-40-neo-payj0001in-motorola-original-imagtkf5ewhafvhh.jpeg?q=70",
         Count:1,
        },
        {
         id:3,
-        title:"Laptop",
-        image:"https://imgeng.jagran.com/images/2023/mar/best%20laptops1679305053832.jpg",
+        title:"Samsung-TV",
+        image:"https://rukminim2.flixcart.com/image/312/312/xif0q/television/o/d/s/-original-imahygbg8vwnzpgu.jpeg?q=70",
         Count:1,
         
        },
        {
         id:4,
-        title:"Laptop",
-        image:"https://imgeng.jagran.com/images/2023/mar/best%20laptops1679305053832.jpg",
+        title:"boAt-AirDops",
+        image:"https://rukminim2.flixcart.com/image/300/300/xif0q/headphone/5/g/7/-original-imagqhswqrx7sn3w.jpeg?q=90",
         Count:1,
         
        },
        {
         id:5,
-        title:"Laptop",
-        image:"https://imgeng.jagran.com/images/2023/mar/best%20laptops1679305053832.jpg",
+        title:"Smart-Watch",
+        image:"https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/w/e/q/-original-imagq425shghrgzz.jpeg?q=70",
         Count:1,
        },
        {
         id:6,
-        title:"Laptop",
-        image:"https://imgeng.jagran.com/images/2023/mar/best%20laptops1679305053832.jpg",
+        title:"Water-Purifier",
+        image:"https://rukminim2.flixcart.com/image/312/312/xif0q/water-purifier/e/w/p/m2-needs-no-service-for-2-years-10-stage-purification-native-by-original-imahygdfzh9se4ug.jpeg?q=70",
         Count:1,
        },
        {
         id:7,
-        title:"Laptop",
-        image:"https://imgeng.jagran.com/images/2023/mar/best%20laptops1679305053832.jpg",
+        title:"i-Phone15",
+        image:"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70",
+        Count:1,
+       },
+       {
+        id:8,
+        title:"Lenovo",
+        image:"https://rukminim2.flixcart.com/image/312/312/xif0q/computer/b/i/x/-original-imahyfx77g4cxt75.jpeg?q=70",
         Count:1,
        },
 ]
