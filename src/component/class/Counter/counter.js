@@ -113,7 +113,7 @@ class Counter extends Component{
                 
          <div style={{border: '1px solid white', borderRadius: '9px', padding: '20px', width: '280px',margin:'10px',boxShadow:'1px 1px 20px 1px',}}>
         <img src={image} height={200} width={200} alt="Product Image" />
-        <h4>Title: {title}</h4>
+        <h4 style={{textAlign:"center"}}> {title}</h4>
         <div  style={{ display:'flex',justifyContent:'center',margin:'10px' } }>
             <button style={{ padding: '4px 10px' }} onClick={() => this.changAction("Increment", id)}>+</button>
             <span style={{ position: 'relative', left: '0px', border: '2px solid black', padding: '4px 10px' }}>{Count}</span>

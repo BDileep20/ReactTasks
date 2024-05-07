@@ -10,7 +10,9 @@
 // import ButtonComponent from "./component/button/button"
 // import GreetingComponent from "./component/greeting/greeting"
 // import CardComponent from "./component/list/Card/cardtask"
-import Counter from "./component/class/counter/counter"
+// import Counter from "./component/class/counter/counter"
+import TodoComponent from "./component/class/todo/todo"
+// import NavBar from "./component/list/navBar/navBar"
 
 // import Button from './component';
 // import Listitems from './component/list/listitems';
@@ -406,7 +408,9 @@ return(
  </GreetingComponent> */}
     {/* // } */}
 {/* </div> */}
-<Counter/>
+{/* <Counter/> */}
+<TodoComponent/>
+
 
 </>
 
