@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Child from "./child";
 
 
 class Counter extends Component{
@@ -103,6 +104,7 @@ class Counter extends Component{
 
  }
     render(){
+        console.log("parent re-render")
         return(
         <>
         <div style={{flexDirection:"row",flex:1,display:"flex",flexWrap:"wrap",alignItems:'center'}} >
@@ -121,7 +123,7 @@ class Counter extends Component{
         </div>
         </div>
 
-
+            <Child/>
                 </>
             )
          })}   

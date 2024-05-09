@@ -14,7 +14,9 @@
 // import TodoComponent from "./component/class/todo/todo"
 // import NavBar from "./component/list/navBar/navBar"
 
-import Mounting from "./component/class/lifecycle/mounting/mounting"
+import ProductListning from "./component/class/products/products"
+
+// import Mounting from "./component/class/lifecycle/mounting/mounting"
 
 // import Button from './component';
 // import Listitems from './component/list/listitems';
@@ -412,7 +414,8 @@ return(
 {/* </div> */}
 {/* <Counter/> */}
 {/* <TodoComponent/> */}
-<Mounting/>
+{/* <Mounting/> */}
+<ProductListning/>
 
 
 </>
