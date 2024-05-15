@@ -14,7 +14,9 @@
 // import TodoComponent from "./component/class/todo/todo"
 // import NavBar from "./component/list/navBar/navBar"
 
-import ProductListning from "./component/class/products/products"
+import FilteredProducts from "./component/class/eachproduct/filter"
+
+// import ProductListning from "./component/class/products/products"
 
 // import Mounting from "./component/class/lifecycle/mounting/mounting"
 
@@ -415,7 +417,8 @@ return(
 {/* <Counter/> */}
 {/* <TodoComponent/> */}
 {/* <Mounting/> */}
-<ProductListning/>
+{/* <ProductListning/> */}
+<FilteredProducts/>
 
 
 </>
