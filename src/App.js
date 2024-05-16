@@ -13,8 +13,8 @@
 // import Counter from "./component/class/counter/counter"
 // import TodoComponent from "./component/class/todo/todo"
 // import NavBar from "./component/list/navBar/navBar"
-
-import FilteredProducts from "./component/class/eachproduct/filter"
+// import FilteredProducts from "./component/class/eachproduct/filter"
+import LoginForm from "./component/functional/loginform"
 
 // import ProductListning from "./component/class/products/products"
 
@@ -418,7 +418,8 @@ return(
 {/* <TodoComponent/> */}
 {/* <Mounting/> */}
 {/* <ProductListning/> */}
-<FilteredProducts/>
+{/* <FilteredProducts/> */}
+<LoginForm/>
 
 
 </>
