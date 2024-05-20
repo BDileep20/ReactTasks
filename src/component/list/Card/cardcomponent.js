@@ -9,6 +9,7 @@ console.log(props)
     const {title,image,price}=props.products
     return(
     <>
+    <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
     <div className="card" style={{border:'1px solid white',padding:'30px',width:'290px',boxShadow:'1px 1px 10px 1px',position:'relative',top:'20px'}}>
   <div className="card-body">
   <img src={image} height={200} width={200}></img>
@@ -23,6 +24,7 @@ console.log(props)
     </a> */}
 
   </div>
+</div>
 </div>
 
     

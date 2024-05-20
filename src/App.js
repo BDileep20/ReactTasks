@@ -14,7 +14,9 @@
 // import TodoComponent from "./component/class/todo/todo"
 // import NavBar from "./component/list/navBar/navBar"
 // import FilteredProducts from "./component/class/eachproduct/filter"
-import LoginForm from "./component/functional/loginform"
+// import LoginForm from "./component/functional/loginform"
+import UseEffectTask from "./component/functional/productFilter"
+// import UseEffect1 from "./component/functional/useEffect/useEffectEx1"
 
 // import ProductListning from "./component/class/products/products"
 
@@ -419,7 +421,9 @@ return(
 {/* <Mounting/> */}
 {/* <ProductListning/> */}
 {/* <FilteredProducts/> */}
-<LoginForm/>
+{/* <LoginForm/> */}
+{/* <UseEffect1/> */}
+<UseEffectTask/>
 
 
 </>
