@@ -1,12 +1,6 @@
 import axios from "axios";
 import { Component } from "react";
 import CardComponent from "../../list/card/cardcomponent";
-
-    
-
-
-
-
 class FilteredProducts extends Component{
     constructor(){
         super()
