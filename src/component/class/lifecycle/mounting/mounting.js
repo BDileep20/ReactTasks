@@ -71,11 +71,11 @@ class Mounting extends Component{
            
             <div >
                   <div style={{height:'100'}}>
-          <button onClick={() => this.useraction("women's clothing")}>women's clothing</button>
-          <button onClick={() => this.useraction("jewelery")}> jewelery</button>
-          <button onClick={() => this.useraction("electronics")}>electronics</button>
-          <button onClick={() => this.useraction("men's clothing")}> men's clothing</button>
-          <button onClick={() => this.allproducts(this.state.products)}>All categories</button>
+          <button  onClick={() => this.useraction("women's clothing")} className="btn btn-success">women's clothing</button>
+          <button style={{margin:'5px'}} onClick={() => this.useraction("jewelery")} className="btn btn-success"> jewelery</button>
+          <button style={{margin:'5px'}}  onClick={() => this.useraction("electronics")} className="btn btn-success">electronics</button>
+          <button style={{margin:'5px'}}  onClick={() => this.useraction("men's clothing")} className="btn btn-success"> men's clothing</button>
+          <button style={{margin:'5px'}}  onClick={() => this.allproducts(this.state.products)} className="btn btn-success">All categories</button>
           
           </div>
           
