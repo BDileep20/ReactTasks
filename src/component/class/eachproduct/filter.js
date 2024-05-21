@@ -40,14 +40,14 @@ Products:[response.data]
 render(){
     return(
         <>
-        <div style={{display:'flex',justifyContent:'center',alignItems:'center',width:'100%',height:'50px',backgroundColor:'gray',gap:'10px'}}>
+        <div style={{display:'flex',justifyContent:'center',alignItems:'center',width:'100%',height:'50px',backgroundColor:'antiquewhite',gap:'10px'}}>
            
         {
 
             this.state.btn.map(each=>
                 {
                     return(
-                    <button style={{border:'white',borderRadius:'5px'}}  key={each} onClick={()=>this.fetchCardData(each)}>{each}</button>
+                    <button style={{border:'white',borderRadius:'5px'}}  key={each} onClick={()=>this.fetchCardData(each)} className="btn btn-success">{each}</button>
                     )
                 }
             )

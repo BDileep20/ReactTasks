@@ -15,7 +15,8 @@
 // import NavBar from "./component/list/navBar/navBar"
 // import FilteredProducts from "./component/class/eachproduct/filter"
 // import LoginForm from "./component/functional/loginform"
-import UseEffectTask from "./component/functional/productFilter"
+// import UseEffectTask from "./component/functional/productFilter"
+import NavigationStack from "./navigation/navigation-stack"
 // import UseEffect1 from "./component/functional/useEffect/useEffectEx1"
 
 // import ProductListning from "./component/class/products/products"
@@ -423,7 +424,8 @@ return(
 {/* <FilteredProducts/> */}
 {/* <LoginForm/> */}
 {/* <UseEffect1/> */}
-<UseEffectTask/>
+{/* <UseEffectTask/> */}
+<NavigationStack/>
 
 
 </>

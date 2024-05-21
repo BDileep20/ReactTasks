@@ -6,7 +6,8 @@ import { useState } from "react"
 
 
 
-const LoginForm=()=>{
+
+const LoginForm=({navigation})=>{
 
 const [userName,setUserName]=useState('')
 const [userPassword,setPassword]=useState('')
@@ -43,6 +44,7 @@ const userPasswordHandler=(event)=>{
 
 }
     const onFormSubmit=(event)=>{
+    
         event.preventDefault()
         const userInfo={
             username:userName,
@@ -68,6 +70,7 @@ const userPasswordHandler=(event)=>{
           setLoginErrorMessage(null)
           alert('login successfull')
           success()
+          navigation()
         }
       });
     }
@@ -89,7 +92,7 @@ const userPasswordHandler=(event)=>{
           <h3>welcome user</h3>
         </>
         :
-       <form style={{border:'1px solid white',width:'40%',display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',boxShadow:'0px 0px 20px 0px',borderRadius:'10px',marginLeft:'30%',marginTop:'10%'}} onSubmit={onFormSubmit}>
+       <form style={{border:'1px solid white',width:'40%',display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',boxShadow:'0px 0px 20px 0px',borderRadius:'10px',marginLeft:'30%',marginTop:'5%'}} onSubmit={onFormSubmit}>
         <h2 style={{margin:'5%',display:'flex',justifyContent:'center'}}>login page</h2>
     
   <div style={{width:'60%'}} className="mb-3 mt-3">
@@ -132,10 +135,15 @@ const userPasswordHandler=(event)=>{
         loginErrorMessage&&
         <span style={{color:'red'}}>{loginErrorMessage}</span>
     }
-  {!userNameError && !passwordError && <button style={{marginBottom:'5px'}} type="submit" className="btn btn-success">
+  {!userNameError && !passwordError && <button  style={{marginBottom:'5px'}} type="submit" className="btn btn-success">
     Submit
   </button>
 }
+{/* {
+   <button onClick={()=>navigation()} style={{marginBottom:'5px'}} type="submit" className="btn btn-success">
+  Submit
+</button>
+} */}
 
 </form>
 }

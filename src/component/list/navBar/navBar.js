@@ -1,9 +1,17 @@
+import { Link, NavLink } from "react-router-dom"
+import AboutScreen from "../../../screens/about-screen"
+import HomeScreen from "../../../screens/home-screen"
 
 
 
 
 const NavBar=()=>{
     const dark=true
+    const linkStyles={
+      textDecoration:"none",
+      color:"white"
+
+    }
     return(
         <nav 
         class={dark ?"navbar navbar-expand-sm bg-dark navbar-dark":"navbar navbar-expand-sm bg-light navbar-light"}
@@ -11,26 +19,26 @@ const NavBar=()=>{
         >
   <div className="container-fluid">
     <ul className="navbar-nav">
-      <li className="nav-item">
-        <a className="nav-link active" href="#">
-          Active
-        </a>
+    <li className="nav-item nav-link">
+      <Link to={"/"} style={linkStyles}>
+         Home
+         </Link>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">
-          Link
-        </a>
+      <li className="nav-item nav-link">
+        <Link to={"/about"} style={linkStyles}>
+          </Link>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">
-          Link
-        </a>
+      <li className="nav-item nav-link">
+        <Link to={"/settings"} style={linkStyles}>
+         Setting
+         </Link>
       </li>
-      <li className="nav-item">
-        <a className="nav-link disabled" href="#">
-          Disabled
-        </a>
+      <li className="nav-item nav-link">
+        <Link to={'/blog'} style={linkStyles}>
+          Blog
+          </Link>
       </li>
+      
     </ul>
   </div>
 </nav>
