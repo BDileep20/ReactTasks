@@ -10,7 +10,7 @@ function  InvalidScreen(){
     return(
         <div>
             <h3>Hey you lost , Please check your direction</h3>
-            <button onClick={navigateToMainScreen}>Back to home</button>
+            <button onClick={navigateToMainScreen} className="btn btn-success">Back to home</button>
         </div>
     )
 }
