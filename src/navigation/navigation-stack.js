@@ -5,6 +5,7 @@ import AboutScreen from "../screens/about-screen";
 import SettingScreen from "../screens/setting-screen";
 import BlogScreen from "../screens/blog-screen";
 import InvalidScreen from "../screens/invalid-screen";
+import ProductDetails from "../screens/productDetails";
 
 
 function NavigationStack() {
@@ -16,7 +17,10 @@ function NavigationStack() {
           <Route  path='/about' Component={AboutScreen} /> 
           <Route  path='/settings' Component={SettingScreen} /> 
         <Route path='/blog' Component={BlogScreen}/>
+        <Route path="/:brand/:productID" Component={ProductDetails}/>
+
         <Route path="*" Component={InvalidScreen}/>
+ 
        
         </Routes>
       </BrowserRouter>

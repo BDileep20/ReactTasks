@@ -1,6 +1,5 @@
 import React from "react"
 import NavBar from "../component/list/navBar/navBar"
-import HomeScreen from "./home-screen"
 import { Link } from "react-router-dom"
 
 

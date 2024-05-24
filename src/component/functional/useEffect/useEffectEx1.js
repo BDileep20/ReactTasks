@@ -2,6 +2,8 @@ import axios from "axios"
 import React, { useState } from "react"
 import { useEffect } from "react"
 import { checkArrayLengthExist, checkObjectEmpty } from "../../../utills/functions"
+import ImageComponent from "../../image/image"
+import { Link } from "react-router-dom"
 
 
 
@@ -17,37 +19,37 @@ const UseEffect1=()=>{
     },[])
 
     // useEffect will trigger every when array value changes
-    useEffect(()=>{
-        document.title=`count ${count}`
-        fetchEachTodo()
-    },[count])
+    // useEffect(()=>{
+    //     document.title=`count ${count}`
+    //     fetchEachTodo()
+    // },[count])
 
     // To fetch all the todos from server
     const fetchData=async()=>{
-        const result=await axios.get('https://jsonplaceholder.typicode.com/todos')
+        const result=await axios.get('https://dummyjson.com/products')
         console.log("result",result)
         if(result.status===200){
-            setTodos(result.data)
+            setTodos(result.data.products)
         }
     }
 
 // This function is  to fetch todo based on the current count
-const fetchEachTodo=async()=>{
-    const result=await axios.get(`https://jsonplaceholder.typicode.com/todos/${count}`)
-        console.log("result",result)
-        if(result.status===200){
-            seteachtodo(result.data)
-        }
-}
+// const fetchEachTodo=async()=>{
+//     const result=await axios.get(`https://jsonplaceholder.typicode.com/todos/${count}`)
+//         console.log("result",result)
+//         if(result.status===200){
+//             seteachtodo(result.data)
+//         }
+// }
 
-    const handleIncrement=()=>{
-        setCount(count+1)
-    }
+    // const handleIncrement=()=>{
+    //     setCount(count+1)
+    // }
     
 return(
     <>
 
-    <h3>use Effect example</h3>
+    {/* <h3>use Effect example</h3>
 
 {
     
@@ -57,8 +59,8 @@ return(
     null
     
 }
-    <h3>{count}</h3>
-    <button onClick={handleIncrement}>Count Increment</button>
+    <h3>{count}</h3> */}
+    {/* <button onClick={handleIncrement}>Count Increment</button> */}
     {
         checkArrayLengthExist(todos) ? 
         <>
@@ -67,7 +69,13 @@ return(
             return(
         
                 <React.Fragment key={eachTodo.id}>
-                {/* <h3>{eachTodo.title}</h3> */}
+                <h3>{eachTodo.title}</h3>
+                <ImageComponent   src={eachTodo.thumbnail} />
+                <button>
+                    <Link to={`/${eachTodo.brand}/${eachTodo.id}`}>
+                    Click to view product
+                    </Link>
+                </button>
                 </React.Fragment>
             )
         })
